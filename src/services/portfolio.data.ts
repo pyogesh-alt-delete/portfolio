@@ -81,7 +81,7 @@ export const PORTFOLIO = {
         'Developed a natural language query builder that allows non-technical users to create complex support requests using intuitive, everyday language.',
         'Managed end-to-end responsibilities including design, development, integration testing, quality assurance, and production deployment of distributed application modules.',
       ],
-      tags: ['Angular', 'Spring Boot', 'AWS', 'LLM', 'Kafka']
+      tags: []
     },
     {
       role: 'Digital Specialist Engineer',
@@ -95,7 +95,7 @@ export const PORTFOLIO = {
         'Led a major migration of the Angular framework to the latest version, modernizing the codebase and enabling new security and performance features.',
         'Implemented a comprehensive unit testing framework using Karma and Jasmine to ensure high code quality across dozens of frontend components.'
       ],
-      tags: ['TypeScript', 'Java', 'PostgreSQL', 'Redis']
+      tags: []
     },
   ],
 
