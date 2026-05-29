@@ -1,0 +1,23 @@
+ <section id="about">
+      <div class="sec-head" appScrollReveal>
+        <span class="sec-num">01</span>
+        <span class="sec-title">About</span>
+        <span class="sec-rule"></span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-body" appScrollReveal>
+          @for (p of data.about.body; track $index) {
+            <p>{{ p }}</p>
+          }
+        </div>
+        <div class="facts" appScrollReveal [revealDelay]="80">
+          @for (f of data.about.facts; track f.k) {
+            <div class="fact">
+              <span class="fk">{{ f.k }}</span>
+              <span class="fv">{{ f.v }}</span>
+            </div>
+          }
+        </div>
+      </div>
+    </section>

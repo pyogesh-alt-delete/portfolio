@@ -1,0 +1,60 @@
+ <header class="hero" id="hero">
+      <div class="hero-term" appScrollReveal>
+        <span class="prompt">{{ data.identity.handle }}&#64;portfolio</span>
+        <span>~ %</span>
+        <span>{{ typed }}</span>
+        @if (typed.length < cmd.length) {
+          <span class="cursor"></span>
+        }
+      </div>
+
+      <h1 appScrollReveal [revealDelay]="80">
+        {{ data.identity.name }}<span class="muted">.</span>
+      </h1>
+
+      <div class="subrole" appScrollReveal [revealDelay]="140">
+        {{ data.identity.role }}
+        <span class="at">&#64;</span>
+        {{ data.identity.company }}
+      </div>
+
+      <p class="hero-bio" appScrollReveal [revealDelay]="180">
+        {{ data.identity.tagline }}
+      </p>
+
+      <div class="hero-cta" appScrollReveal [revealDelay]="220">
+        <a class="btn btn-primary" [href]="data.identity.cv" download>
+          <svg class="ico ico-animated" viewBox="0 0 24 24">
+            <path d="M12 3v12"/>
+            <path class="arrow-down" d="m8 11 4 4 4-4"/>
+            <path d="M4 19h16"/>
+          </svg>
+          Download CV
+        </a>
+        <a class="btn btn-ghost" href="#contact" (click)="scrollToContact($event)">
+          Get in touch
+          <svg viewBox="0 0 24 24" class="ico-sm" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M7 17L17 7M9 7h8v8"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero-meta" appScrollReveal [revealDelay]="280">
+        <div class="m">
+          <div class="mk">Role</div>
+          <div class="mv">{{ data.identity.role }}</div>
+        </div>
+        <div class="m">
+          <div class="mk">Company</div>
+          <div class="mv">{{ data.identity.company }}</div>
+        </div>
+        <div class="m">
+          <div class="mk">Location</div>
+          <div class="mv">{{ data.identity.location }}</div>
+        </div>
+        <div class="m">
+          <div class="mk">Status</div>
+          <div class="mv status-open">Open to Work</div>
+        </div>
+      </div>
+    </header>

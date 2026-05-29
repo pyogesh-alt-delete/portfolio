@@ -1,0 +1,36 @@
+  <section id="contact" style="border-bottom:none">
+      <div class="sec-head" appScrollReveal>
+        <span class="sec-num">07</span>
+        <span class="sec-title">Contact</span>
+        <span class="sec-rule"></span>
+      </div>
+
+      <div class="contact" appScrollReveal>
+        <h2>Let's build something<br/>that <span class="em">stays up.</span></h2>
+        <p>Open to collaborations, interesting problems, and conversations about applied AI, distributed systems, or a good synth patch.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" [href]="emailHref">
+            <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" fill="none" stroke-width="1.7">
+              <path d="M7 17L17 7M9 7h8v8"/>
+            </svg>
+            Say hello
+          </a>
+          <a class="btn btn-ghost" [href]="data.identity.cv" download>
+            <svg class="ico" viewBox="0 0 24 24">
+              <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5"/>
+            </svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+
+      <div class="foot-bar">
+        <span>© 2026 {{ data.identity.name }} </span>
+        <span class="to-top" (click)="scrollSpy.scrollToTop()">
+          back to top
+          <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" fill="none" stroke-width="1.7">
+            <path d="M12 19V5m0 0l-6 6m6-6l6 6"/>
+          </svg>
+        </span>
+      </div>
+    </section>
